@@ -1,0 +1,37 @@
+E:\KI_1_NAM3\KI1_NAM3_kien\C#\DatVeXemPhim\DatVeXemPhim\bin\Debug\DatVeXemPhim.exe.config
+E:\KI_1_NAM3\KI1_NAM3_kien\C#\DatVeXemPhim\DatVeXemPhim\bin\Debug\DatVeXemPhim.exe
+E:\KI_1_NAM3\KI1_NAM3_kien\C#\DatVeXemPhim\DatVeXemPhim\bin\Debug\DatVeXemPhim.pdb
+E:\KI_1_NAM3\KI1_NAM3_kien\C#\DatVeXemPhim\DatVeXemPhim\obj\Debug\DatVeXemPhim.csprojResolveAssemblyReference.cache
+E:\KI_1_NAM3\KI1_NAM3_kien\C#\DatVeXemPhim\DatVeXemPhim\obj\Debug\DatVeXemPhim.Form1.resources
+E:\KI_1_NAM3\KI1_NAM3_kien\C#\DatVeXemPhim\DatVeXemPhim\obj\Debug\DatVeXemPhim.Properties.Resources.resources
+E:\KI_1_NAM3\KI1_NAM3_kien\C#\DatVeXemPhim\DatVeXemPhim\obj\Debug\DatVeXemPhim.csproj.GenerateResource.Cache
+E:\KI_1_NAM3\KI1_NAM3_kien\C#\DatVeXemPhim\DatVeXemPhim\obj\Debug\DatVeXemPhim.exe
+E:\KI_1_NAM3\KI1_NAM3_kien\C#\DatVeXemPhim\DatVeXemPhim\obj\Debug\DatVeXemPhim.pdb
+E:\KI_1_NAM3\KI1_NAM3_kien\C#\DatVeXemPhim\DatVeXemPhim\obj\Debug\DatVeXemPhim.Form2.resources
+E:\KI_1_NAM3\KI1_NAM3_kien\C#\BAITAP\DatVeXemPhim\DatVeXemPhim\bin\Debug\DatVeXemPhim.exe.config
+E:\KI_1_NAM3\KI1_NAM3_kien\C#\BAITAP\DatVeXemPhim\DatVeXemPhim\obj\Debug\DatVeXemPhim.exe
+E:\KI_1_NAM3\KI1_NAM3_kien\C#\BAITAP\DatVeXemPhim\DatVeXemPhim\obj\Debug\DatVeXemPhim.pdb
+C:\Users\Lam Pham\Downloads\Thuc tap chuyen nganh HTTT\DatVeXemPhim-master (1)\DatVeXemPhim-master\DatVeXemPhim\bin\Debug\DatVeXemPhim.exe.config
+C:\Users\Lam Pham\Downloads\Thuc tap chuyen nganh HTTT\DatVeXemPhim-master (1)\DatVeXemPhim-master\DatVeXemPhim\bin\Debug\DatVeXemPhim.exe
+C:\Users\Lam Pham\Downloads\Thuc tap chuyen nganh HTTT\DatVeXemPhim-master (1)\DatVeXemPhim-master\DatVeXemPhim\bin\Debug\DatVeXemPhim.pdb
+C:\Users\Lam Pham\Downloads\Thuc tap chuyen nganh HTTT\DatVeXemPhim-master (1)\DatVeXemPhim-master\DatVeXemPhim\obj\Debug\DatVeXemPhim.csproj.AssemblyReference.cache
+C:\Users\Lam Pham\Downloads\Thuc tap chuyen nganh HTTT\DatVeXemPhim-master (1)\DatVeXemPhim-master\DatVeXemPhim\obj\Debug\DatVeXemPhim.csproj.SuggestedBindingRedirects.cache
+C:\Users\Lam Pham\Downloads\Thuc tap chuyen nganh HTTT\DatVeXemPhim-master (1)\DatVeXemPhim-master\DatVeXemPhim\obj\Debug\DatVeXemPhim.Form1.resources
+C:\Users\Lam Pham\Downloads\Thuc tap chuyen nganh HTTT\DatVeXemPhim-master (1)\DatVeXemPhim-master\DatVeXemPhim\obj\Debug\DatVeXemPhim.Form2.resources
+C:\Users\Lam Pham\Downloads\Thuc tap chuyen nganh HTTT\DatVeXemPhim-master (1)\DatVeXemPhim-master\DatVeXemPhim\obj\Debug\DatVeXemPhim.Properties.Resources.resources
+C:\Users\Lam Pham\Downloads\Thuc tap chuyen nganh HTTT\DatVeXemPhim-master (1)\DatVeXemPhim-master\DatVeXemPhim\obj\Debug\DatVeXemPhim.csproj.GenerateResource.cache
+C:\Users\Lam Pham\Downloads\Thuc tap chuyen nganh HTTT\DatVeXemPhim-master (1)\DatVeXemPhim-master\DatVeXemPhim\obj\Debug\DatVeXemPhim.csproj.CoreCompileInputs.cache
+C:\Users\Lam Pham\Downloads\Thuc tap chuyen nganh HTTT\DatVeXemPhim-master (1)\DatVeXemPhim-master\DatVeXemPhim\obj\Debug\DatVeXemPhim.exe
+C:\Users\Lam Pham\Downloads\Thuc tap chuyen nganh HTTT\DatVeXemPhim-master (1)\DatVeXemPhim-master\DatVeXemPhim\obj\Debug\DatVeXemPhim.pdb
+C:\Users\Lam Pham\Downloads\Thuc tap chuyen nganh HTTT\DatVeXemPhim-master\DatVeXemPhim-master\DatVeXemPhim\bin\Debug\DatVeXemPhim.exe.config
+C:\Users\Lam Pham\Downloads\Thuc tap chuyen nganh HTTT\DatVeXemPhim-master\DatVeXemPhim-master\DatVeXemPhim\bin\Debug\DatVeXemPhim.exe
+C:\Users\Lam Pham\Downloads\Thuc tap chuyen nganh HTTT\DatVeXemPhim-master\DatVeXemPhim-master\DatVeXemPhim\bin\Debug\DatVeXemPhim.pdb
+C:\Users\Lam Pham\Downloads\Thuc tap chuyen nganh HTTT\DatVeXemPhim-master\DatVeXemPhim-master\DatVeXemPhim\obj\Debug\DatVeXemPhim.csproj.AssemblyReference.cache
+C:\Users\Lam Pham\Downloads\Thuc tap chuyen nganh HTTT\DatVeXemPhim-master\DatVeXemPhim-master\DatVeXemPhim\obj\Debug\DatVeXemPhim.csproj.SuggestedBindingRedirects.cache
+C:\Users\Lam Pham\Downloads\Thuc tap chuyen nganh HTTT\DatVeXemPhim-master\DatVeXemPhim-master\DatVeXemPhim\obj\Debug\DatVeXemPhim.Form1.resources
+C:\Users\Lam Pham\Downloads\Thuc tap chuyen nganh HTTT\DatVeXemPhim-master\DatVeXemPhim-master\DatVeXemPhim\obj\Debug\DatVeXemPhim.Form2.resources
+C:\Users\Lam Pham\Downloads\Thuc tap chuyen nganh HTTT\DatVeXemPhim-master\DatVeXemPhim-master\DatVeXemPhim\obj\Debug\DatVeXemPhim.Properties.Resources.resources
+C:\Users\Lam Pham\Downloads\Thuc tap chuyen nganh HTTT\DatVeXemPhim-master\DatVeXemPhim-master\DatVeXemPhim\obj\Debug\DatVeXemPhim.csproj.GenerateResource.cache
+C:\Users\Lam Pham\Downloads\Thuc tap chuyen nganh HTTT\DatVeXemPhim-master\DatVeXemPhim-master\DatVeXemPhim\obj\Debug\DatVeXemPhim.csproj.CoreCompileInputs.cache
+C:\Users\Lam Pham\Downloads\Thuc tap chuyen nganh HTTT\DatVeXemPhim-master\DatVeXemPhim-master\DatVeXemPhim\obj\Debug\DatVeXemPhim.exe
+C:\Users\Lam Pham\Downloads\Thuc tap chuyen nganh HTTT\DatVeXemPhim-master\DatVeXemPhim-master\DatVeXemPhim\obj\Debug\DatVeXemPhim.pdb
