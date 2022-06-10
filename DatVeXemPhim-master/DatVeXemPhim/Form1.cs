@@ -1,12 +1,17 @@
-﻿using System;
+﻿using Gremlin.Net.Process.Traversal;
+using OpenXmlPowerTools;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar;
 
 namespace DatVeXemPhim
 {
@@ -120,6 +125,11 @@ namespace DatVeXemPhim
             inf.sdt = textBox2.Text;
             Form2 f2 = new Form2(inf);
             f2.ShowDialog();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

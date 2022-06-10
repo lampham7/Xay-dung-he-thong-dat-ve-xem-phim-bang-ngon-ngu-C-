@@ -12,6 +12,7 @@ namespace DatVeXemPhim
 {
     public partial class Form2 : Form
     {
+        Font Font1 = new Font("Times New Roman", 17);
         public Form2()
         {
             InitializeComponent();
@@ -26,6 +27,17 @@ namespace DatVeXemPhim
             label11.Text = inf.sdt;
             label13.Text = inf.soGhe;
             label15.Text = inf.thanhtien.ToString();
+            label3.Font = Font1;
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
