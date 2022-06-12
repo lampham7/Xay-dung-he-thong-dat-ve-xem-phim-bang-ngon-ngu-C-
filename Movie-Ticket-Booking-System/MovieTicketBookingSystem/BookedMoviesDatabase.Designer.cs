@@ -52,28 +52,28 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
             this.button1.Location = new System.Drawing.Point(135, 342);
             this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(208, 42);
+            this.button1.Size = new System.Drawing.Size(208, 51);
             this.button1.TabIndex = 1;
             this.button1.Tag = "";
-            this.button1.Text = "View Booked Movies";
+            this.button1.Text = "Xem đặt vé";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(504, 389);
+            this.button2.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
+            this.button2.Location = new System.Drawing.Point(467, 391);
             this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(261, 42);
+            this.button2.Size = new System.Drawing.Size(328, 49);
             this.button2.TabIndex = 2;
             this.button2.Tag = "";
-            this.button2.Text = "Search bookings by bookID";
+            this.button2.Text = "Tìm kiếm đặt vé bằng BookID";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -88,14 +88,14 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.button3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
             this.button3.Location = new System.Drawing.Point(857, 342);
             this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(261, 42);
             this.button3.TabIndex = 4;
             this.button3.Tag = "";
-            this.button3.Text = "Print Receipt";
+            this.button3.Text = "In vé";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -106,14 +106,14 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.button4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(563, 486);
+            this.button4.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
+            this.button4.Location = new System.Drawing.Point(563, 481);
             this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(117, 42);
+            this.button4.Size = new System.Drawing.Size(135, 47);
             this.button4.TabIndex = 5;
             this.button4.Tag = "";
-            this.button4.Text = "Back";
+            this.button4.Text = "Quay lại";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
