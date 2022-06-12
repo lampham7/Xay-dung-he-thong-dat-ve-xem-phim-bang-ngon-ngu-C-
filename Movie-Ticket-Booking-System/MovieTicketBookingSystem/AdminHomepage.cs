@@ -36,7 +36,7 @@ namespace MovieTicketBookingSystem
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AdminLoginN al = new AdminLoginN();
+            AdminLogin al = new AdminLogin();
             al.ShowDialog();
             this.Close();
         }

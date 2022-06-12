@@ -50,16 +50,12 @@ namespace MovieTicketBookingSystem
                 sc.ExecuteNonQuery();
                 con.Close();
                 MessageBox.Show("Movie Added Successfully!!!!!!");
-
-
-
             }
           catch(Exception ex)
             {
                 MessageBox.Show(ex.ToString());
             }
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
             OpenFileDialog dlg = new OpenFileDialog();
@@ -71,13 +67,17 @@ namespace MovieTicketBookingSystem
                 pictureBox1.ImageLocation = picLoc1;
             }
         }
-
         private void button3_Click(object sender, EventArgs e)
         {
             this.Hide();
             AdminHomepage ah = new AdminHomepage();
             ah.ShowDialog();
             this.Close();
+        }
+
+        private void AddMovies_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

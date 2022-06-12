@@ -1,6 +1,6 @@
 ﻿namespace MovieTicketBookingSystem
 {
-    partial class AdminLoginN
+    partial class AdminLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -33,104 +33,108 @@
             this.tbPassword = new System.Windows.Forms.TextBox();
             this.tbUsername = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Yellow;
-            this.button2.Font = new System.Drawing.Font("Harrington", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(189, 178);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
+            this.button2.Location = new System.Drawing.Point(261, 222);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 48);
+            this.button2.Size = new System.Drawing.Size(158, 48);
             this.button2.TabIndex = 17;
-            this.button2.Text = "Login";
+            this.button2.Text = "Đăng nhập";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Yellow;
-            this.button1.Font = new System.Drawing.Font("Harrington", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(763, 63);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
+            this.button1.Location = new System.Drawing.Point(74, 223);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(137, 37);
+            this.button1.Size = new System.Drawing.Size(137, 48);
             this.button1.TabIndex = 16;
-            this.button1.Text = "Start Page";
+            this.button1.Text = "Quay lại";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // tbPassword
             // 
-            this.tbPassword.Location = new System.Drawing.Point(163, 123);
-            this.tbPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbPassword.Font = new System.Drawing.Font("Times New Roman", 10.5F);
+            this.tbPassword.Location = new System.Drawing.Point(209, 154);
+            this.tbPassword.Margin = new System.Windows.Forms.Padding(4);
             this.tbPassword.Name = "tbPassword";
-            this.tbPassword.Size = new System.Drawing.Size(272, 22);
+            this.tbPassword.Size = new System.Drawing.Size(244, 28);
             this.tbPassword.TabIndex = 15;
+            this.tbPassword.UseSystemPasswordChar = true;
             // 
             // tbUsername
             // 
-            this.tbUsername.Location = new System.Drawing.Point(161, 36);
-            this.tbUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbUsername.Font = new System.Drawing.Font("Times New Roman", 13F);
+            this.tbUsername.Location = new System.Drawing.Point(210, 96);
+            this.tbUsername.Margin = new System.Windows.Forms.Padding(4);
             this.tbUsername.Name = "tbUsername";
-            this.tbUsername.Size = new System.Drawing.Size(272, 22);
+            this.tbUsername.Size = new System.Drawing.Size(244, 32);
             this.tbUsername.TabIndex = 14;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Harrington", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 37);
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(31, 98);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 24);
+            this.label1.Size = new System.Drawing.Size(154, 25);
             this.label1.TabIndex = 12;
-            this.label1.Text = "Username :";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Sienna;
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.tbUsername);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.tbPassword);
-            this.panel1.Location = new System.Drawing.Point(196, 63);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(464, 255);
-            this.panel1.TabIndex = 18;
+            this.label1.Text = "Tên đăng nhập";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Harrington", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 124);
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(31, 160);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 24);
+            this.label2.Size = new System.Drawing.Size(103, 25);
             this.label2.TabIndex = 18;
-            this.label2.Text = "Password:";
+            this.label2.Text = "Mật khẩu";
             // 
-            // AdminLoginN
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(107, 21);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(285, 38);
+            this.label3.TabIndex = 19;
+            this.label3.Text = "Đăng nhập Admin";
+            // 
+            // AdminLogin
             // 
             this.AcceptButton = this.button2;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(947, 359);
-            this.Controls.Add(this.panel1);
+            this.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.ClientSize = new System.Drawing.Size(498, 310);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "AdminLoginN";
-            this.Text = "AdminLoginN";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.Controls.Add(this.tbUsername);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.tbPassword);
+            this.Location = new System.Drawing.Point(39, 33);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "AdminLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "AdminLogin";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -141,7 +145,7 @@
         private System.Windows.Forms.TextBox tbPassword;
         private System.Windows.Forms.TextBox tbUsername;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }

@@ -16,6 +16,13 @@ namespace MovieTicketBookingSystem
         public CustomerDatabase()
         {
             InitializeComponent();
+            con.Open();
+            String qry = "Select * from dbo.Customer_SignUp";
+            SqlDataAdapter sda = new SqlDataAdapter(qry, con);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            dataGridView1.DataSource = dt;
+            con.Close();
         }
         SqlConnection con = new SqlConnection("Data Source=(local);Initial Catalog=MovieTicketManagementSystem;Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
 
@@ -40,11 +47,11 @@ namespace MovieTicketBookingSystem
         private void button2_Click(object sender, EventArgs e)
         {
             con.Open();
-            String qry = "update dbo.Customer_SignUp set FullName='" + textBox1.Text + "',EmailAdress='" + textBox2.Text + "',MobileNo='" + textBox3.Text + "' where FullName='" + textBox1.Text + "'";
+            String qry = "update dbo.Customer_SignUp set FullName='" + textBox1.Text + "',EmailAddress='" + textBox2.Text + "',MobileNo='" + textBox3.Text + "' where FullName='" + textBox1.Text + "'";
             SqlCommand sc = new SqlCommand(qry, con);
             sc.ExecuteNonQuery();
             con.Close();
-            MessageBox.Show("Updated Successfully");
+            MessageBox.Show("Cập nhật thành công");
         }
 
         private void button3_Click(object sender, EventArgs e)

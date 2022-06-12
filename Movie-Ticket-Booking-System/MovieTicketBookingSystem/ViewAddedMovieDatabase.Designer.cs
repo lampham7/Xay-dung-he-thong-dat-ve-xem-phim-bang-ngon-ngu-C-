@@ -49,6 +49,11 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(398, 272);
             this.dataGridView1.TabIndex = 0;
+            //dataGridView1.ColumnCount = 7;
+
+            //dataGridView1.Columns[0].Width = 50;
+            //dataGridView1.Columns[1].Width = 108;  // or whatever width works well for abbrev
+           
             //this.dataGridView1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseDoubleClick);
             // 
             // button3

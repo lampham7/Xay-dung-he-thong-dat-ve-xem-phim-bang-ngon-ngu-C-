@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MovieTicketBookingSystem
 {
-    public partial class AdminLoginN : Form
+    public partial class AdminLogin : Form
     {
-        public AdminLoginN()
+        public AdminLogin()
         {
             InitializeComponent();
         }

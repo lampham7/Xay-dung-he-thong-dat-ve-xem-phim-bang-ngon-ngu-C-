@@ -47,7 +47,7 @@ namespace MovieTicketBookingSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string qry = "Select * from dbo.Movie_Information where Movie_Title='" + comboBox1.Text + "';";
+            string qry = "Select * from dbo.Movie_Information where Movie_Title=N'" + comboBox1.Text + "';";
             SqlCommand sc = new SqlCommand(qry, con);
             SqlDataReader myreader;
             try
@@ -60,7 +60,7 @@ namespace MovieTicketBookingSystem
                     String movieTitle = myreader.GetString(1);
                     String movieGenre = myreader.GetString(2);
                     String movieSynopsis = myreader.GetString(3);
-                    String movieTime = myreader.GetInt32(4).ToString();
+                    String movieTime = myreader.GetString(4);
 
                     label7.Text = movieTitle;
                     label5.Text = movieGenre;
@@ -75,7 +75,6 @@ namespace MovieTicketBookingSystem
                         if (img == null)
                         {
                             pictureBox1.Image = null;
-
                         }
 
                         else
@@ -92,15 +91,10 @@ namespace MovieTicketBookingSystem
                 con.Close();
             }
 
-
-
-
-
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
             }
-
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -134,6 +128,16 @@ namespace MovieTicketBookingSystem
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
             
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

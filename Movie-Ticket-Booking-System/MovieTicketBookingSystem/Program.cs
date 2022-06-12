@@ -16,7 +16,7 @@ namespace MovieTicketBookingSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ViewAddedMovieDatabase());
+            Application.Run(new BlockBusterHomepage());
         }
     }
 }

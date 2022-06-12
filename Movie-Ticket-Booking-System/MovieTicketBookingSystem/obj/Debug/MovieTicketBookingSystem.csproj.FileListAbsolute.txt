@@ -46,7 +46,6 @@ C:\Users\Lam Pham\Source\Repos\Movie-Ticket-Booking-System\MovieTicketBookingSys
 C:\Users\Lam Pham\Source\Repos\Movie-Ticket-Booking-System\MovieTicketBookingSystem\obj\Debug\MovieTicketBookingSystem.csproj.SuggestedBindingRedirects.cache
 C:\Users\Lam Pham\Source\Repos\Movie-Ticket-Booking-System\MovieTicketBookingSystem\obj\Debug\MovieTicketBookingSystem.AddMovies.resources
 C:\Users\Lam Pham\Source\Repos\Movie-Ticket-Booking-System\MovieTicketBookingSystem\obj\Debug\MovieTicketBookingSystem.AdminHomepage.resources
-C:\Users\Lam Pham\Source\Repos\Movie-Ticket-Booking-System\MovieTicketBookingSystem\obj\Debug\MovieTicketBookingSystem.AdminLoginN.resources
 C:\Users\Lam Pham\Source\Repos\Movie-Ticket-Booking-System\MovieTicketBookingSystem\obj\Debug\MovieTicketBookingSystem.BlockBusterHomepage.resources
 C:\Users\Lam Pham\Source\Repos\Movie-Ticket-Booking-System\MovieTicketBookingSystem\obj\Debug\MovieTicketBookingSystem.BookedMoviesDatabase.resources
 C:\Users\Lam Pham\Source\Repos\Movie-Ticket-Booking-System\MovieTicketBookingSystem\obj\Debug\MovieTicketBookingSystem.BookMovie.resources
@@ -61,3 +60,4 @@ C:\Users\Lam Pham\Source\Repos\Movie-Ticket-Booking-System\MovieTicketBookingSys
 C:\Users\Lam Pham\Source\Repos\Movie-Ticket-Booking-System\MovieTicketBookingSystem\obj\Debug\MovieTicketBookingSystem.csproj.CoreCompileInputs.cache
 C:\Users\Lam Pham\Source\Repos\Movie-Ticket-Booking-System\MovieTicketBookingSystem\obj\Debug\MovieTicketBookingSystem.exe
 C:\Users\Lam Pham\Source\Repos\Movie-Ticket-Booking-System\MovieTicketBookingSystem\obj\Debug\MovieTicketBookingSystem.pdb
+C:\Users\Lam Pham\Source\Repos\Movie-Ticket-Booking-System\MovieTicketBookingSystem\obj\Debug\MovieTicketBookingSystem.AdminLogin.resources
