@@ -23,7 +23,7 @@ namespace MovieTicketBookingSystem
             String password = tbPassword.Text.ToString();
             if (username == "admin" && password == "admin")
             {
-                MessageBox.Show("Đăng nhập thành công!!!");
+                MessageBox.Show("Đăng nhập thành công");
                 this.Hide();
                 AdminHomepage hp = new AdminHomepage();
                 hp.ShowDialog();

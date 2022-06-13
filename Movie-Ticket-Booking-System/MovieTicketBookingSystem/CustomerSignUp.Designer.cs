@@ -249,7 +249,7 @@
             // 
             // btnlogin
             // 
-            this.btnlogin.BackColor = System.Drawing.Color.Red;
+            this.btnlogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnlogin.Font = new System.Drawing.Font("Times New Roman", 12.5F);
             this.btnlogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnlogin.Location = new System.Drawing.Point(125, 523);
@@ -263,7 +263,7 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Green;
+            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 12.5F);
             this.button1.ForeColor = System.Drawing.Color.AntiqueWhite;
             this.button1.Location = new System.Drawing.Point(372, 522);
@@ -305,7 +305,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(675, 614);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);

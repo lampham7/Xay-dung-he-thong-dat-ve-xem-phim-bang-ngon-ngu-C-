@@ -47,7 +47,7 @@ namespace MovieTicketBookingSystem
         private void button2_Click(object sender, EventArgs e)
         {
             con.Open();
-            String qry = "update dbo.Customer_SignUp set FullName='" + textBox1.Text + "',EmailAddress='" + textBox2.Text + "',MobileNo='" + textBox3.Text + "' where FullName='" + textBox1.Text + "'";
+            String qry = "update dbo.Customer_SignUp set EmailAddress='" + textBox2.Text + "',MobileNo='" + textBox3.Text + "' where CustomerID='" + textBox1.Text + "'";
             SqlCommand sc = new SqlCommand(qry, con);
             sc.ExecuteNonQuery();
             con.Close();

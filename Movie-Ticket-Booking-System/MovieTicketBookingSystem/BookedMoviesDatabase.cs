@@ -16,6 +16,13 @@ namespace MovieTicketBookingSystem
         public BookedMoviesDatabase()
         {
             InitializeComponent();
+            con.Open();
+            String qry = "Select * from dbo.Movie_Book";
+            SqlDataAdapter sda = new SqlDataAdapter(qry, con);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            dataGridView1.DataSource = dt;
+            con.Close();
         }
         SqlConnection con = new SqlConnection("Data Source=(local);Initial Catalog=MovieTicketManagementSystem;Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
 
@@ -61,6 +68,11 @@ namespace MovieTicketBookingSystem
             AdminHomepage ah = new AdminHomepage();
             ah.ShowDialog();
             this.Close();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
