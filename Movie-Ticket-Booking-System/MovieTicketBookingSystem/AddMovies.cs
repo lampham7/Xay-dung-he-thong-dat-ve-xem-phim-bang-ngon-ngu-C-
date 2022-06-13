@@ -49,7 +49,7 @@ namespace MovieTicketBookingSystem
                 sc.Parameters.Add(new SqlParameter("@img", img));
                 sc.ExecuteNonQuery();
                 con.Close();
-                MessageBox.Show("Movie Added Successfully!!!!!!");
+                MessageBox.Show("Thêm phim thành công");
             }
           catch(Exception ex)
             {

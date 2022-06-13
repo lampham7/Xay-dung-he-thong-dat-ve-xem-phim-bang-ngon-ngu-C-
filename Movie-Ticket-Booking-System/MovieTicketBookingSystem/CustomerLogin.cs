@@ -27,9 +27,7 @@ namespace MovieTicketBookingSystem
         {
             try
             {
-
                 con.Open();
-
 
                 String Username = tbUsername.Text.ToString();
                 String Password = tbPassword.Text.ToString();
@@ -53,7 +51,7 @@ namespace MovieTicketBookingSystem
                 }
                 else
                 {
-                    MessageBox.Show("Please check Your UserName and Password Again");
+                    MessageBox.Show("Bạn hãy kiểm tra lại tên tài khoản và mật khẩu");
                 }
 
                 SqlCommand sc = new SqlCommand(qry, con);
@@ -63,7 +61,7 @@ namespace MovieTicketBookingSystem
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error is: " + ex.ToString());
+                MessageBox.Show("Lỗi là: " + ex.ToString());
             }
         }
         
@@ -73,7 +71,6 @@ namespace MovieTicketBookingSystem
             CustomerWelcomePage cw = new CustomerWelcomePage();
             cw.ShowDialog();
             this.Close();
-            
         }
     }
 }

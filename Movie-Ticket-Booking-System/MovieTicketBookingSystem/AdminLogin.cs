@@ -29,9 +29,17 @@ namespace MovieTicketBookingSystem
                 hp.ShowDialog();
 
             }
+            else if (username=="admin"&&password!="admin")
+            {
+                MessageBox.Show("Sai mật khẩu. Hãy kiểm tra lại");
+            }
+            else if (username != "admin" && password == "admin")
+            {
+                MessageBox.Show("Sai tên tài khoản. Hãy kiểm tra lại");
+            }
             else
             {
-                MessageBox.Show("Wrong Password...Check Again!!!");
+                MessageBox.Show("Sai tên tài khoản và mật khẩu. Hãy kiểm tra lại");
             }
         }
         private void button1_Click(object sender, EventArgs e)

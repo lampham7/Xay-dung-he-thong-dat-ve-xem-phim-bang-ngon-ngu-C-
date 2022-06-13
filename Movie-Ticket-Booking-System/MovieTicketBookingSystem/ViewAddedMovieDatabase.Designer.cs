@@ -184,7 +184,6 @@
             this.Name = "ViewAddedMovieDatabase";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ViewAddedMovieDatabase";
-            this.Load += new System.EventHandler(this.ViewAddedMovieDatabase_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

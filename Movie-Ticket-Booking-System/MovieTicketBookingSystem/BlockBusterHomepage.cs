@@ -84,7 +84,7 @@ namespace MovieTicketBookingSystem
                         }
                     }
                     else {
-                        MessageBox.Show("Data is not avaliable");
+                        MessageBox.Show("Dữ liệu không có sẵn");
                     }
 
                 }

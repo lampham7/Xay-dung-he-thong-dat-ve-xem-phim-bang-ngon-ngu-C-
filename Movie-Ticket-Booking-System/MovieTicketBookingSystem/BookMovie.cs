@@ -81,7 +81,7 @@ namespace MovieTicketBookingSystem
             
             sc.ExecuteNonQuery();
             con.Close();
-            MessageBox.Show("Booking Completed Successfully !!!!!!");
+            MessageBox.Show("Đặt vé thành công");
         }
 
         private void BookMovie_Load(object sender, EventArgs e)

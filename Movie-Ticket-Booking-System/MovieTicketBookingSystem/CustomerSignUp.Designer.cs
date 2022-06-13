@@ -116,12 +116,14 @@
             // 
             // textBox4
             // 
-            this.textBox4.Font = new System.Drawing.Font("Times New Roman", 13F);
+            this.textBox4.Font = new System.Drawing.Font("Times New Roman", 10.5F);
             this.textBox4.Location = new System.Drawing.Point(273, 264);
             this.textBox4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(299, 32);
+            this.textBox4.Size = new System.Drawing.Size(299, 28);
             this.textBox4.TabIndex = 35;
+            this.textBox4.UseSystemPasswordChar = true;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // textBox3
             // 

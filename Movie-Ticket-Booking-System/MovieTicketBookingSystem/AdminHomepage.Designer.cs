@@ -40,12 +40,13 @@ namespace MovieTicketBookingSystem
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.Color.Yellow;
-            this.button5.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold);
-            this.button5.Location = new System.Drawing.Point(162, 265);
+            this.button5.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button5.Font = new System.Drawing.Font("Times New Roman", 15.5F);
+            this.button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button5.Location = new System.Drawing.Point(105, 295);
             this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(508, 51);
+            this.button5.Size = new System.Drawing.Size(407, 81);
             this.button5.TabIndex = 13;
             this.button5.Text = "Quản lý người dùng";
             this.button5.UseVisualStyleBackColor = false;
@@ -54,22 +55,23 @@ namespace MovieTicketBookingSystem
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 22F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(279, 34);
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 22F);
+            this.label2.Location = new System.Drawing.Point(179, 24);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(267, 42);
+            this.label2.Size = new System.Drawing.Size(246, 42);
             this.label2.TabIndex = 12;
             this.label2.Text = "Menu Quản Trị";
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.Yellow;
-            this.button4.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold);
-            this.button4.Location = new System.Drawing.Point(162, 340);
+            this.button4.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button4.Font = new System.Drawing.Font("Times New Roman", 15.5F);
+            this.button4.ForeColor = System.Drawing.SystemColors.Control;
+            this.button4.Location = new System.Drawing.Point(105, 395);
             this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(508, 51);
+            this.button4.Size = new System.Drawing.Size(407, 81);
             this.button4.TabIndex = 11;
             this.button4.Text = "Quản lý lịch sử đặt vé";
             this.button4.UseVisualStyleBackColor = false;
@@ -77,12 +79,13 @@ namespace MovieTicketBookingSystem
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.Yellow;
-            this.button3.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold);
-            this.button3.Location = new System.Drawing.Point(162, 188);
+            this.button3.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button3.Font = new System.Drawing.Font("Times New Roman", 15.5F);
+            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button3.Location = new System.Drawing.Point(105, 195);
             this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(509, 51);
+            this.button3.Size = new System.Drawing.Size(407, 81);
             this.button3.TabIndex = 10;
             this.button3.Text = "Quản lý cơ sở dữ liệu phim";
             this.button3.UseVisualStyleBackColor = false;
@@ -90,12 +93,13 @@ namespace MovieTicketBookingSystem
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.Yellow;
-            this.button2.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold);
-            this.button2.Location = new System.Drawing.Point(161, 112);
+            this.button2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button2.Font = new System.Drawing.Font("Times New Roman", 15.5F);
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2.Location = new System.Drawing.Point(105, 95);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(509, 51);
+            this.button2.Size = new System.Drawing.Size(407, 81);
             this.button2.TabIndex = 9;
             this.button2.Text = "Thêm phim";
             this.button2.UseVisualStyleBackColor = false;
@@ -103,9 +107,10 @@ namespace MovieTicketBookingSystem
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Yellow;
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(348, 446);
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(238, 525);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(139, 41);
@@ -118,8 +123,8 @@ namespace MovieTicketBookingSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.ClientSize = new System.Drawing.Size(858, 500);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(615, 599);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.label2);

@@ -38,7 +38,7 @@ namespace MovieTicketBookingSystem
                 SqlCommand sc = new SqlCommand(qry, con);
                 sc.ExecuteNonQuery();
 
-                MessageBox.Show("Succesfully Signed Up,Please Login to Continue");
+                MessageBox.Show("Tạo tài khoản thành công, đăng nhập để tiếp tục");
                 con.Close();
             }
             catch(Exception ex)
@@ -100,6 +100,11 @@ namespace MovieTicketBookingSystem
                 //Top2
                 g.DrawLine(borderPen, new Point(rect.X + box.Padding.Left + (int)(strSize.Width), rect.Y), new Point(rect.X + rect.Width, rect.Y));
             }
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

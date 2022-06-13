@@ -74,12 +74,7 @@ namespace MovieTicketBookingSystem
             SqlCommand sc = new SqlCommand(qry, con);
             sc.ExecuteNonQuery();
             con.Close();
-            MessageBox.Show("Deleted Successfully");
-        }
-
-        private void ViewAddedMovieDatabase_Load(object sender, EventArgs e)
-        {
-
+            MessageBox.Show("Xóa thành công");
         }
     }
 }
