@@ -45,7 +45,7 @@ namespace MovieTicketBookingSystem
                 SqlCommand sc = new SqlCommand(qry, con);
                 sc.ExecuteNonQuery();
                 con.Close();
-                MessageBox.Show("Updated Successfully");
+                MessageBox.Show("Sửa thành công");
             }
             catch(Exception ex)
             {
@@ -75,6 +75,11 @@ namespace MovieTicketBookingSystem
             sc.ExecuteNonQuery();
             con.Close();
             MessageBox.Show("Deleted Successfully");
+        }
+
+        private void ViewAddedMovieDatabase_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

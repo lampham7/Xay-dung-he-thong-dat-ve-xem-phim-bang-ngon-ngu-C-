@@ -38,5 +38,19 @@ namespace MovieTicketBookingSystem
             sup.ShowDialog();
             this.Close();
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CustomerLogin s = new CustomerLogin();
+            s.ShowDialog();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CustomerSignUp s = new CustomerSignUp();
+            s.ShowDialog();
+        }
     }
 }

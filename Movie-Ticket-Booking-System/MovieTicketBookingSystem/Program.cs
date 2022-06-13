@@ -16,7 +16,7 @@ namespace MovieTicketBookingSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CustomerDatabase());
+            Application.Run(new ViewAddedMovieDatabase());;
         }
     }
 }
