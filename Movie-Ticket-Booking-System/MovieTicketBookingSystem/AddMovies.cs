@@ -33,7 +33,7 @@ namespace MovieTicketBookingSystem
                 String movieSynopsis = richTextBox1.Text.ToString();
 
                 String movieTime = textBox3.Text.ToString();
-                //int imovieTime = Int32.Parse(movieTime);
+                int imovieTime = Int32.Parse(movieTime);
 
                 String movieReleaseDate = dateTimePicker1.Value.ToString();
 
@@ -43,17 +43,20 @@ namespace MovieTicketBookingSystem
                 img = br.ReadBytes((int)fstream.Length);
 
                 con.Open();
-                String qry = "insert into dbo.Movie_Information(Movie_ID,Movie_Title,Movie_Genre,Movie_Synopsis,Movie_RunTime,Movie_ReleaseDate,Movie_Image) values('" + movieID + "',N'" + movieTitle + "',N'" + movieGenre + "',N'" + movieSynopsis + "','" + movieTime + "','" + movieReleaseDate + "',@img) ";
+                String qry = "insert into dbo.Movie_Information(Movie_ID,Movie_Title,Movie_Genre,Movie_Synopsis,Movie_RunTime,Movie_ReleaseDate,Movie_Image) values('" + movieID + "',N'" + movieTitle + "',N'" + movieGenre + "',N'" + movieSynopsis + "','" + imovieTime + "','" + movieReleaseDate + "',@img) ";
 
                 SqlCommand sc = new SqlCommand(qry, con);
                 sc.Parameters.Add(new SqlParameter("@img", img));
                 sc.ExecuteNonQuery();
-                con.Close();
                 MessageBox.Show("Thêm phim thành công");
             }
           catch(Exception ex)
             {
                 MessageBox.Show(ex.ToString());
+            }
+            finally
+            {
+                con.Close();
             }
         }
         private void button2_Click(object sender, EventArgs e)
@@ -73,11 +76,6 @@ namespace MovieTicketBookingSystem
             AdminHomepage ah = new AdminHomepage();
             ah.ShowDialog();
             this.Close();
-        }
-
-        private void AddMovies_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void label4_Click(object sender, EventArgs e)

@@ -76,7 +76,7 @@ namespace MovieTicketBookingSystem
         {
 
             con.Open();
-            String qry = "insert into dbo.Movie_Book(BookID,UserName,Movie_Title,TotalCustomer,SelectQuality,SelectSit,ShowTime,PriceToPay) values('" + textBox1.Text + "','" + textBox4.Text + "','" + comboBox1.Text + "','" + textBox2.Text + "','" + comboBox2.Text + "','" + comboBox3.Text + "','" + comboBox4.Text + "','" + textBox3.Text + "')";
+            String qry = "insert into dbo.Movie_Book(BookID,UserName,Movie_Title,TotalCustomer,SelectQuality,SelectSit,ShowTime,PriceToPay) values('" + textBox1.Text + "','" + textBox4.Text + "',N'" + comboBox1.Text + "','" + textBox2.Text + "','" + comboBox2.Text + "',N'" + comboBox3.Text + "','" + comboBox4.Text + "','" + textBox3.Text + "')";
             SqlCommand sc = new SqlCommand(qry, con);
             
             sc.ExecuteNonQuery();

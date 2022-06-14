@@ -123,6 +123,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.Lime;
             this.button2.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
+            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button2.Location = new System.Drawing.Point(581, 531);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
@@ -242,7 +243,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1172, 753);
+            this.ClientSize = new System.Drawing.Size(1172, 777);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);

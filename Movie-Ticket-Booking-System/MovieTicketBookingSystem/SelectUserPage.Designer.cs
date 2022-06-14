@@ -38,7 +38,7 @@
             this.button2.BackColor = System.Drawing.Color.Blue;
             this.button2.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold);
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(391, 164);
+            this.button2.Location = new System.Drawing.Point(429, 141);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(195, 69);
@@ -53,12 +53,12 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 23F);
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(84, 46);
+            this.label1.Location = new System.Drawing.Point(64, 37);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(545, 43);
+            this.label1.Size = new System.Drawing.Size(654, 43);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Chọn loại tài khoản để đăng nhập";
+            this.label1.Text = "Chọn loại tài khoản để truy cập hệ thống";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // button1
@@ -66,7 +66,7 @@
             this.button1.BackColor = System.Drawing.Color.Black;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(124, 165);
+            this.button1.Location = new System.Drawing.Point(177, 141);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(174, 69);
@@ -80,7 +80,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(713, 301);
+            this.ClientSize = new System.Drawing.Size(795, 260);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);

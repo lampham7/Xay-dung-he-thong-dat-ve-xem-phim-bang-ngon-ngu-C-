@@ -262,7 +262,6 @@
             this.Name = "AddMovies";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddMovies";
-            this.Load += new System.EventHandler(this.AddMovies_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

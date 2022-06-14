@@ -38,7 +38,7 @@ namespace MovieTicketBookingSystem
                 SqlCommand sc = new SqlCommand(qry, con);
                 sc.ExecuteNonQuery();
 
-                MessageBox.Show("Tạo tài khoản thành công, đăng nhập để tiếp tục");
+                MessageBox.Show("Tạo tài khoản thành công, bạn hãy đăng nhập để đặt vé");
                 con.Close();
             }
             catch(Exception ex)

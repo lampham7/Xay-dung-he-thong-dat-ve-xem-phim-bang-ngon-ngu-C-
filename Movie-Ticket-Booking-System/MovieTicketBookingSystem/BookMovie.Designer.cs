@@ -66,6 +66,7 @@
             // 
             // comboBox4
             // 
+            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox4.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Items.AddRange(new object[] {
@@ -76,7 +77,7 @@
             this.comboBox4.Location = new System.Drawing.Point(267, 412);
             this.comboBox4.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(170, 30);
+            this.comboBox4.Size = new System.Drawing.Size(127, 30);
             this.comboBox4.TabIndex = 21;
             // 
             // label10
@@ -103,11 +104,11 @@
             // 
             // textBox4
             // 
+            this.textBox4.Cursor = System.Windows.Forms.Cursors.No;
             this.textBox4.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.textBox4.Location = new System.Drawing.Point(267, 179);
             this.textBox4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(170, 30);
             this.textBox4.TabIndex = 18;
             // 
@@ -141,19 +142,21 @@
             // 
             // comboBox3
             // 
+            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox3.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
-            "E-Front",
-            "E-Rear"});
+            "Ghế trước",
+            "Ghế sau"});
             this.comboBox3.Location = new System.Drawing.Point(267, 365);
             this.comboBox3.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(170, 30);
+            this.comboBox3.Size = new System.Drawing.Size(127, 30);
             this.comboBox3.TabIndex = 15;
             // 
             // comboBox2
             // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
@@ -167,12 +170,13 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(267, 225);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(376, 30);
+            this.comboBox1.Size = new System.Drawing.Size(474, 30);
             this.comboBox1.TabIndex = 13;
             // 
             // textBox3
@@ -181,7 +185,6 @@
             this.textBox3.Location = new System.Drawing.Point(267, 460);
             this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(170, 32);
             this.textBox3.TabIndex = 11;
             // 
@@ -191,7 +194,7 @@
             this.textBox2.Location = new System.Drawing.Point(267, 271);
             this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(170, 30);
+            this.textBox2.Size = new System.Drawing.Size(81, 30);
             this.textBox2.TabIndex = 10;
             // 
             // textBox1
@@ -286,7 +289,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(711, 602);
+            this.ClientSize = new System.Drawing.Size(810, 602);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.comboBox4);
             this.Controls.Add(this.label10);

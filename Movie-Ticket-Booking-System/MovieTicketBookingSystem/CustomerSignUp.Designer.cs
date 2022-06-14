@@ -265,7 +265,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.DodgerBlue;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 12.5F);
-            this.button1.ForeColor = System.Drawing.Color.AntiqueWhite;
+            this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(372, 522);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
@@ -330,6 +330,7 @@
             this.Location = new System.Drawing.Point(176, 84);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CustomerSignUp";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CustomerSignUp";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
