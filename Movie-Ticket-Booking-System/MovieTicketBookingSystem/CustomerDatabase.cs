@@ -17,7 +17,7 @@ namespace MovieTicketBookingSystem
         {
             InitializeComponent();
             con.Open();
-            String qry = "Select * from dbo.Customer_SignUp";
+            String qry = "Select * from dbo.Users";
             SqlDataAdapter sda = new SqlDataAdapter(qry, con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
@@ -29,7 +29,7 @@ namespace MovieTicketBookingSystem
         private void button1_Click(object sender, EventArgs e)
         {
             con.Open();
-            String qry = "Select * from dbo.Customer_SignUp";
+            String qry = "Select * from dbo.Users";
             SqlDataAdapter sda = new SqlDataAdapter(qry, con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
@@ -47,7 +47,7 @@ namespace MovieTicketBookingSystem
         private void button2_Click(object sender, EventArgs e)
         {
             con.Open();
-            String qry = "update dbo.Customer_SignUp set EmailAddress='" + textBox2.Text + "',MobileNo='" + textBox3.Text + "' where CustomerID='" + textBox1.Text + "'";
+            String qry = "update dbo.Users set Email='" + textBox2.Text + "',PhoneNumber='" + textBox3.Text + "' where UserID='" + textBox1.Text + "'";
             SqlCommand sc = new SqlCommand(qry, con);
             sc.ExecuteNonQuery();
             con.Close();

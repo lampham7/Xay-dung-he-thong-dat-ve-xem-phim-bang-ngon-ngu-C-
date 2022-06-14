@@ -21,7 +21,7 @@ namespace MovieTicketBookingSystem
         SqlConnection con = new SqlConnection("Data Source=(local);Initial Catalog=MovieTicketManagementSystem;Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
         public void fillcombobox()
         {
-            string qry = "Select * from dbo.Movie_Information";
+            string qry = "Select * from dbo.Movies";
             SqlCommand sc = new SqlCommand(qry, con);
             SqlDataReader myreader;
             try
@@ -76,7 +76,7 @@ namespace MovieTicketBookingSystem
         {
 
             con.Open();
-            String qry = "insert into dbo.Movie_Book(BookID,UserName,Movie_Title,TotalCustomer,SelectQuality,SelectSit,ShowTime,PriceToPay) values('" + textBox1.Text + "','" + textBox4.Text + "',N'" + comboBox1.Text + "','" + textBox2.Text + "','" + comboBox2.Text + "',N'" + comboBox3.Text + "','" + comboBox4.Text + "','" + textBox3.Text + "')";
+            String qry = "insert into dbo.Bookings(Username,MovieName,NumberOfSeats,Type,SeatPosition,ShowTime,Price) values('" + textBox4.Text + "',N'" + comboBox1.Text + "','" + textBox2.Text + "','" + comboBox2.Text + "',N'" + comboBox3.Text + "','" + comboBox4.Text + "','" + textBox3.Text + "')";
             SqlCommand sc = new SqlCommand(qry, con);
             
             sc.ExecuteNonQuery();

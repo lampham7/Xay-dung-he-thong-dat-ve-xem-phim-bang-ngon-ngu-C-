@@ -40,7 +40,6 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -70,11 +69,13 @@
             this.comboBox4.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Items.AddRange(new object[] {
-            "11:30 am",
-            "2:55 pm",
-            "5:10 pm",
-            "7:45 pm"});
-            this.comboBox4.Location = new System.Drawing.Point(267, 412);
+            "8:30",
+            "12:15",
+            "15:00",
+            "17:45",
+            "20:30",
+            "23:15"});
+            this.comboBox4.Location = new System.Drawing.Point(267, 368);
             this.comboBox4.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(127, 30);
@@ -84,7 +85,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Times New Roman", 13F);
-            this.label10.Location = new System.Drawing.Point(90, 415);
+            this.label10.Location = new System.Drawing.Point(90, 371);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(149, 25);
@@ -95,7 +96,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 13F);
-            this.label8.Location = new System.Drawing.Point(90, 181);
+            this.label8.Location = new System.Drawing.Point(90, 137);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(132, 25);
@@ -106,7 +107,7 @@
             // 
             this.textBox4.Cursor = System.Windows.Forms.Cursors.No;
             this.textBox4.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.textBox4.Location = new System.Drawing.Point(267, 179);
+            this.textBox4.Location = new System.Drawing.Point(267, 135);
             this.textBox4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(170, 30);
@@ -117,7 +118,7 @@
             this.button2.BackColor = System.Drawing.Color.DodgerBlue;
             this.button2.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(338, 530);
+            this.button2.Location = new System.Drawing.Point(338, 486);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(135, 52);
@@ -131,7 +132,7 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.button1.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(465, 452);
+            this.button1.Location = new System.Drawing.Point(465, 408);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(125, 49);
@@ -148,7 +149,7 @@
             this.comboBox3.Items.AddRange(new object[] {
             "Ghế trước",
             "Ghế sau"});
-            this.comboBox3.Location = new System.Drawing.Point(267, 365);
+            this.comboBox3.Location = new System.Drawing.Point(267, 321);
             this.comboBox3.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(127, 30);
@@ -162,7 +163,7 @@
             this.comboBox2.Items.AddRange(new object[] {
             "2-D",
             "3-D"});
-            this.comboBox2.Location = new System.Drawing.Point(267, 319);
+            this.comboBox2.Location = new System.Drawing.Point(267, 275);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(81, 30);
@@ -173,7 +174,7 @@
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(267, 225);
+            this.comboBox1.Location = new System.Drawing.Point(267, 181);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(474, 30);
@@ -182,7 +183,7 @@
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
-            this.textBox3.Location = new System.Drawing.Point(267, 460);
+            this.textBox3.Location = new System.Drawing.Point(267, 416);
             this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(170, 32);
@@ -191,26 +192,17 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.textBox2.Location = new System.Drawing.Point(267, 271);
+            this.textBox2.Location = new System.Drawing.Point(267, 227);
             this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(81, 30);
             this.textBox2.TabIndex = 10;
             // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.textBox1.Location = new System.Drawing.Point(267, 134);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(170, 30);
-            this.textBox1.TabIndex = 9;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Times New Roman", 13F);
-            this.label9.Location = new System.Drawing.Point(92, 466);
+            this.label9.Location = new System.Drawing.Point(92, 422);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(44, 25);
@@ -221,7 +213,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 13F);
-            this.label6.Location = new System.Drawing.Point(90, 369);
+            this.label6.Location = new System.Drawing.Point(90, 325);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(91, 25);
@@ -232,7 +224,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 13F);
-            this.label5.Location = new System.Drawing.Point(90, 321);
+            this.label5.Location = new System.Drawing.Point(90, 277);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(100, 25);
@@ -243,7 +235,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 13F);
-            this.label4.Location = new System.Drawing.Point(90, 275);
+            this.label4.Location = new System.Drawing.Point(90, 231);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 25);
@@ -254,7 +246,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 13F);
-            this.label2.Location = new System.Drawing.Point(90, 225);
+            this.label2.Location = new System.Drawing.Point(90, 181);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 25);
@@ -263,14 +255,10 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 13F);
-            this.label1.Location = new System.Drawing.Point(90, 138);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "BookID";
+            this.label1.Size = new System.Drawing.Size(100, 23);
+            this.label1.TabIndex = 23;
             // 
             // label7
             // 
@@ -289,7 +277,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(810, 602);
+            this.ClientSize = new System.Drawing.Size(788, 566);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.comboBox4);
             this.Controls.Add(this.label10);
@@ -302,7 +290,6 @@
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -329,7 +316,6 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;

@@ -69,20 +69,20 @@
             this.button2.BackColor = System.Drawing.Color.LimeGreen;
             this.button2.Font = new System.Drawing.Font("Times New Roman", 12F);
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(556, 411);
+            this.button2.Location = new System.Drawing.Point(528, 411);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(284, 49);
+            this.button2.Size = new System.Drawing.Size(307, 49);
             this.button2.TabIndex = 2;
             this.button2.Tag = "";
-            this.button2.Text = "Tìm kiếm đặt vé bằng BookID";
+            this.button2.Text = "Tìm kiếm đặt vé bằng BookingID";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.textBox1.Location = new System.Drawing.Point(383, 421);
+            this.textBox1.Location = new System.Drawing.Point(365, 421);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(146, 30);
@@ -93,7 +93,7 @@
             // 
             this.button3.BackColor = System.Drawing.Color.Yellow;
             this.button3.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.button3.Location = new System.Drawing.Point(888, 411);
+            this.button3.Location = new System.Drawing.Point(888, 409);
             this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(168, 51);

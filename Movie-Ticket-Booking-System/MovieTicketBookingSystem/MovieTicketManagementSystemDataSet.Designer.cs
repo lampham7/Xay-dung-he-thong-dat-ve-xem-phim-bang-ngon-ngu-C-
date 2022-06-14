@@ -26,7 +26,7 @@ namespace MovieTicketBookingSystem {
         
         private Customer_SignUpDataTable tableCustomer_SignUp;
         
-        private Movie_InformationDataTable tableMovie_Information;
+        private MoviesDataTable tableMovies;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -59,8 +59,8 @@ namespace MovieTicketBookingSystem {
                 if ((ds.Tables["Customer_SignUp"] != null)) {
                     base.Tables.Add(new Customer_SignUpDataTable(ds.Tables["Customer_SignUp"]));
                 }
-                if ((ds.Tables["Movie_Information"] != null)) {
-                    base.Tables.Add(new Movie_InformationDataTable(ds.Tables["Movie_Information"]));
+                if ((ds.Tables["Movies"] != null)) {
+                    base.Tables.Add(new MoviesDataTable(ds.Tables["Movies"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -94,9 +94,9 @@ namespace MovieTicketBookingSystem {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public Movie_InformationDataTable Movie_Information {
+        public MoviesDataTable Movies {
             get {
-                return this.tableMovie_Information;
+                return this.tableMovies;
             }
         }
         
@@ -170,8 +170,8 @@ namespace MovieTicketBookingSystem {
                 if ((ds.Tables["Customer_SignUp"] != null)) {
                     base.Tables.Add(new Customer_SignUpDataTable(ds.Tables["Customer_SignUp"]));
                 }
-                if ((ds.Tables["Movie_Information"] != null)) {
-                    base.Tables.Add(new Movie_InformationDataTable(ds.Tables["Movie_Information"]));
+                if ((ds.Tables["Movies"] != null)) {
+                    base.Tables.Add(new MoviesDataTable(ds.Tables["Movies"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -212,10 +212,10 @@ namespace MovieTicketBookingSystem {
                     this.tableCustomer_SignUp.InitVars();
                 }
             }
-            this.tableMovie_Information = ((Movie_InformationDataTable)(base.Tables["Movie_Information"]));
+            this.tableMovies = ((MoviesDataTable)(base.Tables["Movies"]));
             if ((initTable == true)) {
-                if ((this.tableMovie_Information != null)) {
-                    this.tableMovie_Information.InitVars();
+                if ((this.tableMovies != null)) {
+                    this.tableMovies.InitVars();
                 }
             }
         }
@@ -230,8 +230,8 @@ namespace MovieTicketBookingSystem {
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableCustomer_SignUp = new Customer_SignUpDataTable();
             base.Tables.Add(this.tableCustomer_SignUp);
-            this.tableMovie_Information = new Movie_InformationDataTable();
-            base.Tables.Add(this.tableMovie_Information);
+            this.tableMovies = new MoviesDataTable();
+            base.Tables.Add(this.tableMovies);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -242,7 +242,7 @@ namespace MovieTicketBookingSystem {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializeMovie_Information() {
+        private bool ShouldSerializeMovies() {
             return false;
         }
         
@@ -305,7 +305,7 @@ namespace MovieTicketBookingSystem {
         public delegate void Customer_SignUpRowChangeEventHandler(object sender, Customer_SignUpRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void Movie_InformationRowChangeEventHandler(object sender, Movie_InformationRowChangeEvent e);
+        public delegate void MoviesRowChangeEventHandler(object sender, MoviesRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -316,19 +316,17 @@ namespace MovieTicketBookingSystem {
             
             private global::System.Data.DataColumn columnID;
             
-            private global::System.Data.DataColumn columnFullName;
-            
-            private global::System.Data.DataColumn columnUserName;
+            private global::System.Data.DataColumn columnUsername;
             
             private global::System.Data.DataColumn columnPassword;
             
-            private global::System.Data.DataColumn columnMobileNo;
+            private global::System.Data.DataColumn columnFullName;
             
             private global::System.Data.DataColumn columnGender;
             
-            private global::System.Data.DataColumn columnEmailAddress;
+            private global::System.Data.DataColumn columnPhoneNumber;
             
-            private global::System.Data.DataColumn columnNationality;
+            private global::System.Data.DataColumn columnEmail;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
@@ -373,17 +371,9 @@ namespace MovieTicketBookingSystem {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn FullNameColumn {
+            public global::System.Data.DataColumn UsernameColumn {
                 get {
-                    return this.columnFullName;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn UserNameColumn {
-                get {
-                    return this.columnUserName;
+                    return this.columnUsername;
                 }
             }
             
@@ -397,9 +387,9 @@ namespace MovieTicketBookingSystem {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn MobileNoColumn {
+            public global::System.Data.DataColumn FullNameColumn {
                 get {
-                    return this.columnMobileNo;
+                    return this.columnFullName;
                 }
             }
             
@@ -413,17 +403,17 @@ namespace MovieTicketBookingSystem {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn EmailAddressColumn {
+            public global::System.Data.DataColumn PhoneNumberColumn {
                 get {
-                    return this.columnEmailAddress;
+                    return this.columnPhoneNumber;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn NationalityColumn {
+            public global::System.Data.DataColumn EmailColumn {
                 get {
-                    return this.columnNationality;
+                    return this.columnEmail;
                 }
             }
             
@@ -464,17 +454,16 @@ namespace MovieTicketBookingSystem {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Customer_SignUpRow AddCustomer_SignUpRow(string ID, string FullName, string UserName, string Password, int MobileNo, string Gender, string EmailAddress, string Nationality) {
+            public Customer_SignUpRow AddCustomer_SignUpRow(string ID, string Username, string Password, string FullName, string Gender, int PhoneNumber, string Email) {
                 Customer_SignUpRow rowCustomer_SignUpRow = ((Customer_SignUpRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         ID,
-                        FullName,
-                        UserName,
+                        Username,
                         Password,
-                        MobileNo,
+                        FullName,
                         Gender,
-                        EmailAddress,
-                        Nationality};
+                        PhoneNumber,
+                        Email};
                 rowCustomer_SignUpRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowCustomer_SignUpRow);
                 return rowCustomer_SignUpRow;
@@ -498,13 +487,12 @@ namespace MovieTicketBookingSystem {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
                 this.columnID = base.Columns["ID"];
-                this.columnFullName = base.Columns["FullName"];
-                this.columnUserName = base.Columns["UserName"];
+                this.columnUsername = base.Columns["Username"];
                 this.columnPassword = base.Columns["Password"];
-                this.columnMobileNo = base.Columns["MobileNo"];
+                this.columnFullName = base.Columns["FullName"];
                 this.columnGender = base.Columns["Gender"];
-                this.columnEmailAddress = base.Columns["EmailAddress"];
-                this.columnNationality = base.Columns["Nationality"];
+                this.columnPhoneNumber = base.Columns["PhoneNumber"];
+                this.columnEmail = base.Columns["Email"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -512,34 +500,31 @@ namespace MovieTicketBookingSystem {
             private void InitClass() {
                 this.columnID = new global::System.Data.DataColumn("ID", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnID);
-                this.columnFullName = new global::System.Data.DataColumn("FullName", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnFullName);
-                this.columnUserName = new global::System.Data.DataColumn("UserName", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnUserName);
+                this.columnUsername = new global::System.Data.DataColumn("Username", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnUsername);
                 this.columnPassword = new global::System.Data.DataColumn("Password", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPassword);
-                this.columnMobileNo = new global::System.Data.DataColumn("MobileNo", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnMobileNo);
+                this.columnFullName = new global::System.Data.DataColumn("FullName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFullName);
                 this.columnGender = new global::System.Data.DataColumn("Gender", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnGender);
-                this.columnEmailAddress = new global::System.Data.DataColumn("EmailAddress", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnEmailAddress);
-                this.columnNationality = new global::System.Data.DataColumn("Nationality", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNationality);
+                this.columnPhoneNumber = new global::System.Data.DataColumn("PhoneNumber", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPhoneNumber);
+                this.columnEmail = new global::System.Data.DataColumn("Email", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEmail);
                 this.columnID.AllowDBNull = false;
-                this.columnID.MaxLength = 10;
-                this.columnFullName.AllowDBNull = false;
-                this.columnFullName.MaxLength = 10;
-                this.columnUserName.AllowDBNull = false;
-                this.columnUserName.MaxLength = 10;
+                this.columnID.MaxLength = 5;
+                this.columnUsername.AllowDBNull = false;
+                this.columnUsername.MaxLength = 10;
                 this.columnPassword.AllowDBNull = false;
                 this.columnPassword.MaxLength = 10;
-                this.columnMobileNo.AllowDBNull = false;
+                this.columnFullName.AllowDBNull = false;
+                this.columnFullName.MaxLength = 10;
                 this.columnGender.AllowDBNull = false;
                 this.columnGender.MaxLength = 10;
-                this.columnEmailAddress.AllowDBNull = false;
-                this.columnEmailAddress.MaxLength = 10;
-                this.columnNationality.MaxLength = 10;
+                this.columnPhoneNumber.AllowDBNull = false;
+                this.columnEmail.AllowDBNull = false;
+                this.columnEmail.MaxLength = 10;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -671,26 +656,26 @@ namespace MovieTicketBookingSystem {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class Movie_InformationDataTable : global::System.Data.TypedTableBase<Movie_InformationRow> {
+        public partial class MoviesDataTable : global::System.Data.TypedTableBase<MoviesRow> {
             
-            private global::System.Data.DataColumn columnMovie_ID;
+            private global::System.Data.DataColumn columnMovieID;
             
-            private global::System.Data.DataColumn columnMovie_Title;
+            private global::System.Data.DataColumn columnMovieName;
             
-            private global::System.Data.DataColumn columnMovie_Genre;
+            private global::System.Data.DataColumn columnGenres;
             
-            private global::System.Data.DataColumn columnMovie_Synopsis;
+            private global::System.Data.DataColumn columnSynopsis;
             
-            private global::System.Data.DataColumn columnMovie_RunTime;
+            private global::System.Data.DataColumn columnRunTime;
             
-            private global::System.Data.DataColumn columnMovie_ReleaseDate;
+            private global::System.Data.DataColumn columnReleaseDate;
             
-            private global::System.Data.DataColumn columnMovie_Image;
+            private global::System.Data.DataColumn columnPoster;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Movie_InformationDataTable() {
-                this.TableName = "Movie_Information";
+            public MoviesDataTable() {
+                this.TableName = "Movies";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -698,7 +683,7 @@ namespace MovieTicketBookingSystem {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal Movie_InformationDataTable(global::System.Data.DataTable table) {
+            internal MoviesDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -715,64 +700,64 @@ namespace MovieTicketBookingSystem {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected Movie_InformationDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected MoviesDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn Movie_IDColumn {
+            public global::System.Data.DataColumn MovieIDColumn {
                 get {
-                    return this.columnMovie_ID;
+                    return this.columnMovieID;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn Movie_TitleColumn {
+            public global::System.Data.DataColumn MovieNameColumn {
                 get {
-                    return this.columnMovie_Title;
+                    return this.columnMovieName;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn Movie_GenreColumn {
+            public global::System.Data.DataColumn GenresColumn {
                 get {
-                    return this.columnMovie_Genre;
+                    return this.columnGenres;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn Movie_SynopsisColumn {
+            public global::System.Data.DataColumn SynopsisColumn {
                 get {
-                    return this.columnMovie_Synopsis;
+                    return this.columnSynopsis;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn Movie_RunTimeColumn {
+            public global::System.Data.DataColumn RunTimeColumn {
                 get {
-                    return this.columnMovie_RunTime;
+                    return this.columnRunTime;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn Movie_ReleaseDateColumn {
+            public global::System.Data.DataColumn ReleaseDateColumn {
                 get {
-                    return this.columnMovie_ReleaseDate;
+                    return this.columnReleaseDate;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn Movie_ImageColumn {
+            public global::System.Data.DataColumn PosterColumn {
                 get {
-                    return this.columnMovie_Image;
+                    return this.columnPoster;
                 }
             }
             
@@ -787,51 +772,51 @@ namespace MovieTicketBookingSystem {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Movie_InformationRow this[int index] {
+            public MoviesRow this[int index] {
                 get {
-                    return ((Movie_InformationRow)(this.Rows[index]));
+                    return ((MoviesRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event Movie_InformationRowChangeEventHandler Movie_InformationRowChanging;
+            public event MoviesRowChangeEventHandler MoviesRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event Movie_InformationRowChangeEventHandler Movie_InformationRowChanged;
+            public event MoviesRowChangeEventHandler MoviesRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event Movie_InformationRowChangeEventHandler Movie_InformationRowDeleting;
+            public event MoviesRowChangeEventHandler MoviesRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event Movie_InformationRowChangeEventHandler Movie_InformationRowDeleted;
+            public event MoviesRowChangeEventHandler MoviesRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddMovie_InformationRow(Movie_InformationRow row) {
+            public void AddMoviesRow(MoviesRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Movie_InformationRow AddMovie_InformationRow(int Movie_ID, string Movie_Title, string Movie_Genre, string Movie_Synopsis, int Movie_RunTime, string Movie_ReleaseDate, byte[] Movie_Image) {
-                Movie_InformationRow rowMovie_InformationRow = ((Movie_InformationRow)(this.NewRow()));
+            public MoviesRow AddMoviesRow(int MovieID, string MovieName, string Genres, string Synopsis, int RunTime, string ReleaseDate, byte[] Poster) {
+                MoviesRow rowMoviesRow = ((MoviesRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        Movie_ID,
-                        Movie_Title,
-                        Movie_Genre,
-                        Movie_Synopsis,
-                        Movie_RunTime,
-                        Movie_ReleaseDate,
-                        Movie_Image};
-                rowMovie_InformationRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowMovie_InformationRow);
-                return rowMovie_InformationRow;
+                        MovieID,
+                        MovieName,
+                        Genres,
+                        Synopsis,
+                        RunTime,
+                        ReleaseDate,
+                        Poster};
+                rowMoviesRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowMoviesRow);
+                return rowMoviesRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                Movie_InformationDataTable cln = ((Movie_InformationDataTable)(base.Clone()));
+                MoviesDataTable cln = ((MoviesDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -839,73 +824,73 @@ namespace MovieTicketBookingSystem {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new Movie_InformationDataTable();
+                return new MoviesDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
-                this.columnMovie_ID = base.Columns["Movie_ID"];
-                this.columnMovie_Title = base.Columns["Movie_Title"];
-                this.columnMovie_Genre = base.Columns["Movie_Genre"];
-                this.columnMovie_Synopsis = base.Columns["Movie_Synopsis"];
-                this.columnMovie_RunTime = base.Columns["Movie_RunTime"];
-                this.columnMovie_ReleaseDate = base.Columns["Movie_ReleaseDate"];
-                this.columnMovie_Image = base.Columns["Movie_Image"];
+                this.columnMovieID = base.Columns["MovieID"];
+                this.columnMovieName = base.Columns["MovieName"];
+                this.columnGenres = base.Columns["Genres"];
+                this.columnSynopsis = base.Columns["Synopsis"];
+                this.columnRunTime = base.Columns["RunTime"];
+                this.columnReleaseDate = base.Columns["ReleaseDate"];
+                this.columnPoster = base.Columns["Poster"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             private void InitClass() {
-                this.columnMovie_ID = new global::System.Data.DataColumn("Movie_ID", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnMovie_ID);
-                this.columnMovie_Title = new global::System.Data.DataColumn("Movie_Title", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnMovie_Title);
-                this.columnMovie_Genre = new global::System.Data.DataColumn("Movie_Genre", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnMovie_Genre);
-                this.columnMovie_Synopsis = new global::System.Data.DataColumn("Movie_Synopsis", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnMovie_Synopsis);
-                this.columnMovie_RunTime = new global::System.Data.DataColumn("Movie_RunTime", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnMovie_RunTime);
-                this.columnMovie_ReleaseDate = new global::System.Data.DataColumn("Movie_ReleaseDate", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnMovie_ReleaseDate);
-                this.columnMovie_Image = new global::System.Data.DataColumn("Movie_Image", typeof(byte[]), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnMovie_Image);
-                this.columnMovie_ID.AllowDBNull = false;
-                this.columnMovie_Title.AllowDBNull = false;
-                this.columnMovie_Title.MaxLength = 50;
-                this.columnMovie_Genre.AllowDBNull = false;
-                this.columnMovie_Genre.MaxLength = 50;
-                this.columnMovie_Synopsis.AllowDBNull = false;
-                this.columnMovie_Synopsis.MaxLength = 2147483647;
-                this.columnMovie_ReleaseDate.AllowDBNull = false;
-                this.columnMovie_ReleaseDate.MaxLength = 10;
+                this.columnMovieID = new global::System.Data.DataColumn("MovieID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMovieID);
+                this.columnMovieName = new global::System.Data.DataColumn("MovieName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMovieName);
+                this.columnGenres = new global::System.Data.DataColumn("Genres", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGenres);
+                this.columnSynopsis = new global::System.Data.DataColumn("Synopsis", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSynopsis);
+                this.columnRunTime = new global::System.Data.DataColumn("RunTime", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRunTime);
+                this.columnReleaseDate = new global::System.Data.DataColumn("ReleaseDate", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnReleaseDate);
+                this.columnPoster = new global::System.Data.DataColumn("Poster", typeof(byte[]), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPoster);
+                this.columnMovieID.AllowDBNull = false;
+                this.columnMovieName.AllowDBNull = false;
+                this.columnMovieName.MaxLength = 50;
+                this.columnGenres.AllowDBNull = false;
+                this.columnGenres.MaxLength = 50;
+                this.columnSynopsis.AllowDBNull = false;
+                this.columnSynopsis.MaxLength = 2147483647;
+                this.columnReleaseDate.AllowDBNull = false;
+                this.columnReleaseDate.MaxLength = 10;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Movie_InformationRow NewMovie_InformationRow() {
-                return ((Movie_InformationRow)(this.NewRow()));
+            public MoviesRow NewMoviesRow() {
+                return ((MoviesRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new Movie_InformationRow(builder);
+                return new MoviesRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(Movie_InformationRow);
+                return typeof(MoviesRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.Movie_InformationRowChanged != null)) {
-                    this.Movie_InformationRowChanged(this, new Movie_InformationRowChangeEvent(((Movie_InformationRow)(e.Row)), e.Action));
+                if ((this.MoviesRowChanged != null)) {
+                    this.MoviesRowChanged(this, new MoviesRowChangeEvent(((MoviesRow)(e.Row)), e.Action));
                 }
             }
             
@@ -913,8 +898,8 @@ namespace MovieTicketBookingSystem {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.Movie_InformationRowChanging != null)) {
-                    this.Movie_InformationRowChanging(this, new Movie_InformationRowChangeEvent(((Movie_InformationRow)(e.Row)), e.Action));
+                if ((this.MoviesRowChanging != null)) {
+                    this.MoviesRowChanging(this, new MoviesRowChangeEvent(((MoviesRow)(e.Row)), e.Action));
                 }
             }
             
@@ -922,8 +907,8 @@ namespace MovieTicketBookingSystem {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.Movie_InformationRowDeleted != null)) {
-                    this.Movie_InformationRowDeleted(this, new Movie_InformationRowChangeEvent(((Movie_InformationRow)(e.Row)), e.Action));
+                if ((this.MoviesRowDeleted != null)) {
+                    this.MoviesRowDeleted(this, new MoviesRowChangeEvent(((MoviesRow)(e.Row)), e.Action));
                 }
             }
             
@@ -931,14 +916,14 @@ namespace MovieTicketBookingSystem {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.Movie_InformationRowDeleting != null)) {
-                    this.Movie_InformationRowDeleting(this, new Movie_InformationRowChangeEvent(((Movie_InformationRow)(e.Row)), e.Action));
+                if ((this.MoviesRowDeleting != null)) {
+                    this.MoviesRowDeleting(this, new MoviesRowChangeEvent(((MoviesRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemoveMovie_InformationRow(Movie_InformationRow row) {
+            public void RemoveMoviesRow(MoviesRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -965,7 +950,7 @@ namespace MovieTicketBookingSystem {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "Movie_InformationDataTable";
+                attribute2.FixedValue = "MoviesDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -1033,23 +1018,12 @@ namespace MovieTicketBookingSystem {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string FullName {
+            public string Username {
                 get {
-                    return ((string)(this[this.tableCustomer_SignUp.FullNameColumn]));
+                    return ((string)(this[this.tableCustomer_SignUp.UsernameColumn]));
                 }
                 set {
-                    this[this.tableCustomer_SignUp.FullNameColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string UserName {
-                get {
-                    return ((string)(this[this.tableCustomer_SignUp.UserNameColumn]));
-                }
-                set {
-                    this[this.tableCustomer_SignUp.UserNameColumn] = value;
+                    this[this.tableCustomer_SignUp.UsernameColumn] = value;
                 }
             }
             
@@ -1066,12 +1040,12 @@ namespace MovieTicketBookingSystem {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int MobileNo {
+            public string FullName {
                 get {
-                    return ((int)(this[this.tableCustomer_SignUp.MobileNoColumn]));
+                    return ((string)(this[this.tableCustomer_SignUp.FullNameColumn]));
                 }
                 set {
-                    this[this.tableCustomer_SignUp.MobileNoColumn] = value;
+                    this[this.tableCustomer_SignUp.FullNameColumn] = value;
                 }
             }
             
@@ -1088,167 +1062,150 @@ namespace MovieTicketBookingSystem {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string EmailAddress {
+            public int PhoneNumber {
                 get {
-                    return ((string)(this[this.tableCustomer_SignUp.EmailAddressColumn]));
+                    return ((int)(this[this.tableCustomer_SignUp.PhoneNumberColumn]));
                 }
                 set {
-                    this[this.tableCustomer_SignUp.EmailAddressColumn] = value;
+                    this[this.tableCustomer_SignUp.PhoneNumberColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Nationality {
+            public string Email {
                 get {
-                    try {
-                        return ((string)(this[this.tableCustomer_SignUp.NationalityColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Nationality\' in table \'Customer_SignUp\' is DBNull.", e);
-                    }
+                    return ((string)(this[this.tableCustomer_SignUp.EmailColumn]));
                 }
                 set {
-                    this[this.tableCustomer_SignUp.NationalityColumn] = value;
+                    this[this.tableCustomer_SignUp.EmailColumn] = value;
                 }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsNationalityNull() {
-                return this.IsNull(this.tableCustomer_SignUp.NationalityColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetNationalityNull() {
-                this[this.tableCustomer_SignUp.NationalityColumn] = global::System.Convert.DBNull;
             }
         }
         
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class Movie_InformationRow : global::System.Data.DataRow {
+        public partial class MoviesRow : global::System.Data.DataRow {
             
-            private Movie_InformationDataTable tableMovie_Information;
+            private MoviesDataTable tableMovies;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal Movie_InformationRow(global::System.Data.DataRowBuilder rb) : 
+            internal MoviesRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableMovie_Information = ((Movie_InformationDataTable)(this.Table));
+                this.tableMovies = ((MoviesDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int Movie_ID {
+            public int MovieID {
                 get {
-                    return ((int)(this[this.tableMovie_Information.Movie_IDColumn]));
+                    return ((int)(this[this.tableMovies.MovieIDColumn]));
                 }
                 set {
-                    this[this.tableMovie_Information.Movie_IDColumn] = value;
+                    this[this.tableMovies.MovieIDColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Movie_Title {
+            public string MovieName {
                 get {
-                    return ((string)(this[this.tableMovie_Information.Movie_TitleColumn]));
+                    return ((string)(this[this.tableMovies.MovieNameColumn]));
                 }
                 set {
-                    this[this.tableMovie_Information.Movie_TitleColumn] = value;
+                    this[this.tableMovies.MovieNameColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Movie_Genre {
+            public string Genres {
                 get {
-                    return ((string)(this[this.tableMovie_Information.Movie_GenreColumn]));
+                    return ((string)(this[this.tableMovies.GenresColumn]));
                 }
                 set {
-                    this[this.tableMovie_Information.Movie_GenreColumn] = value;
+                    this[this.tableMovies.GenresColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Movie_Synopsis {
+            public string Synopsis {
                 get {
-                    return ((string)(this[this.tableMovie_Information.Movie_SynopsisColumn]));
+                    return ((string)(this[this.tableMovies.SynopsisColumn]));
                 }
                 set {
-                    this[this.tableMovie_Information.Movie_SynopsisColumn] = value;
+                    this[this.tableMovies.SynopsisColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int Movie_RunTime {
-                get {
-                    try {
-                        return ((int)(this[this.tableMovie_Information.Movie_RunTimeColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Movie_RunTime\' in table \'Movie_Information\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableMovie_Information.Movie_RunTimeColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Movie_ReleaseDate {
-                get {
-                    return ((string)(this[this.tableMovie_Information.Movie_ReleaseDateColumn]));
-                }
-                set {
-                    this[this.tableMovie_Information.Movie_ReleaseDateColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public byte[] Movie_Image {
+            public int RunTime {
                 get {
                     try {
-                        return ((byte[])(this[this.tableMovie_Information.Movie_ImageColumn]));
+                        return ((int)(this[this.tableMovies.RunTimeColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Movie_Image\' in table \'Movie_Information\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'RunTime\' in table \'Movies\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableMovie_Information.Movie_ImageColumn] = value;
+                    this[this.tableMovies.RunTimeColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsMovie_RunTimeNull() {
-                return this.IsNull(this.tableMovie_Information.Movie_RunTimeColumn);
+            public string ReleaseDate {
+                get {
+                    return ((string)(this[this.tableMovies.ReleaseDateColumn]));
+                }
+                set {
+                    this[this.tableMovies.ReleaseDateColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetMovie_RunTimeNull() {
-                this[this.tableMovie_Information.Movie_RunTimeColumn] = global::System.Convert.DBNull;
+            public byte[] Poster {
+                get {
+                    try {
+                        return ((byte[])(this[this.tableMovies.PosterColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Poster\' in table \'Movies\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableMovies.PosterColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsMovie_ImageNull() {
-                return this.IsNull(this.tableMovie_Information.Movie_ImageColumn);
+            public bool IsRunTimeNull() {
+                return this.IsNull(this.tableMovies.RunTimeColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetMovie_ImageNull() {
-                this[this.tableMovie_Information.Movie_ImageColumn] = global::System.Convert.DBNull;
+            public void SetRunTimeNull() {
+                this[this.tableMovies.RunTimeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsPosterNull() {
+                return this.IsNull(this.tableMovies.PosterColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetPosterNull() {
+                this[this.tableMovies.PosterColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -1290,22 +1247,22 @@ namespace MovieTicketBookingSystem {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class Movie_InformationRowChangeEvent : global::System.EventArgs {
+        public class MoviesRowChangeEvent : global::System.EventArgs {
             
-            private Movie_InformationRow eventRow;
+            private MoviesRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Movie_InformationRowChangeEvent(Movie_InformationRow row, global::System.Data.DataRowAction action) {
+            public MoviesRowChangeEvent(MoviesRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public Movie_InformationRow Row {
+            public MoviesRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -1456,9 +1413,9 @@ namespace MovieTicketBookingSystem.MovieTicketManagementSystemDataSetTableAdapte
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Customer_SignUp] ([ID], [FullName], [UserName], [Password], [M" +
-                "obileNo], [Gender], [EmailAddress], [Nationality]) VALUES (@ID, @FullName, @User" +
-                "Name, @Password, @MobileNo, @Gender, @EmailAddress, @Nationality)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Customer_SignUp] ([ID], [UserName], [Password], [FullName], [G" +
+                "ender], [MobileNo], [Email]) VALUES (@UserID, @Username, @Password, @FullName, @" +
+                "Gender, @PhoneNumber, @Email)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@FullName", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "FullName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -1483,8 +1440,8 @@ namespace MovieTicketBookingSystem.MovieTicketManagementSystemDataSetTableAdapte
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT ID, FullName, UserName, Password, MobileNo, Gender, EmailAddress, National" +
-                "ity FROM dbo.Customer_SignUp";
+            this._commandCollection[0].CommandText = "SELECT UserID, Username, Password, FullName, Gender, PhoneNumber, Email FROM dbo." +
+                "Users";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -1615,7 +1572,7 @@ namespace MovieTicketBookingSystem.MovieTicketManagementSystemDataSetTableAdapte
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class Movie_InformationTableAdapter : global::System.ComponentModel.Component {
+    public partial class MoviesTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -1629,7 +1586,7 @@ namespace MovieTicketBookingSystem.MovieTicketManagementSystemDataSetTableAdapte
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public Movie_InformationTableAdapter() {
+        public MoviesTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -1726,26 +1683,28 @@ namespace MovieTicketBookingSystem.MovieTicketManagementSystemDataSetTableAdapte
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "Movie_Information";
-            tableMapping.ColumnMappings.Add("Movie_ID", "Movie_ID");
-            tableMapping.ColumnMappings.Add("Movie_Title", "Movie_Title");
-            tableMapping.ColumnMappings.Add("Movie_Genre", "Movie_Genre");
-            tableMapping.ColumnMappings.Add("Movie_Synopsis", "Movie_Synopsis");
-            tableMapping.ColumnMappings.Add("Movie_RunTime", "Movie_RunTime");
-            tableMapping.ColumnMappings.Add("Movie_ReleaseDate", "Movie_ReleaseDate");
-            tableMapping.ColumnMappings.Add("Movie_Image", "Movie_Image");
+            tableMapping.DataSetTable = "Movies";
+            tableMapping.ColumnMappings.Add("MovieID", "MovieID");
+            tableMapping.ColumnMappings.Add("MovieName", "MovieName");
+            tableMapping.ColumnMappings.Add("Genres", "Genres");
+            tableMapping.ColumnMappings.Add("Synopsis", "Synopsis");
+            tableMapping.ColumnMappings.Add("RunTime", "RunTime");
+            tableMapping.ColumnMappings.Add("ReleaseDate", "ReleaseDate");
+            tableMapping.ColumnMappings.Add("Poster", "Poster");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Movie_Information] ([Movie_ID], [Movie_Title], [Movie_Genre], [Movie_Synopsis], [Movie_RunTime], [Movie_ReleaseDate], [Movie_Image]) VALUES (@Movie_ID, @Movie_Title, @Movie_Genre, @Movie_Synopsis, @Movie_RunTime, @Movie_ReleaseDate, @Movie_Image)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Movies] ([MovieID], [MovieName], [Genres], [Synopsis], [RunTim" +
+                "e], [ReleaseDate], [Poster]) VALUES (@MovieID, @MovieName, @Genres, @Synopsis, @" +
+                "RunTime, @ReleaseDate, @Poster)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Movie_ID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Movie_ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Movie_Title", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Movie_Title", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Movie_Genre", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Movie_Genre", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Movie_Synopsis", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Movie_Synopsis", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Movie_RunTime", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Movie_RunTime", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Movie_ReleaseDate", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Movie_ReleaseDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Movie_Image", global::System.Data.SqlDbType.Image, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Movie_Image", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@MovieID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "MovieID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@MovieName", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Movie_Title", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Genres", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Genres", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Synopsis", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Synopsis", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RunTime", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "RunTime", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ReleaseDate", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ReleaseDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Poster", global::System.Data.SqlDbType.Image, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Poster", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1761,8 +1720,8 @@ namespace MovieTicketBookingSystem.MovieTicketManagementSystemDataSetTableAdapte
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT Movie_ID, Movie_Title, Movie_Genre, Movie_Synopsis, Movie_RunTime, Movie_R" +
-                "eleaseDate, Movie_Image FROM dbo.Movie_Information";
+            this._commandCollection[0].CommandText = "SELECT MovieID, MovieName, Genres, Synopsis, RunTime, ReleaseDate, Poster FROM db" +
+                "o.Movies";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -1770,7 +1729,7 @@ namespace MovieTicketBookingSystem.MovieTicketManagementSystemDataSetTableAdapte
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(MovieTicketManagementSystemDataSet.Movie_InformationDataTable dataTable) {
+        public virtual int Fill(MovieTicketManagementSystemDataSet.MoviesDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1783,9 +1742,9 @@ namespace MovieTicketBookingSystem.MovieTicketManagementSystemDataSetTableAdapte
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual MovieTicketManagementSystemDataSet.Movie_InformationDataTable GetData() {
+        public virtual MovieTicketManagementSystemDataSet.MoviesDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            MovieTicketManagementSystemDataSet.Movie_InformationDataTable dataTable = new MovieTicketManagementSystemDataSet.Movie_InformationDataTable();
+            MovieTicketManagementSystemDataSet.MoviesDataTable dataTable = new MovieTicketManagementSystemDataSet.MoviesDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1793,7 +1752,7 @@ namespace MovieTicketBookingSystem.MovieTicketManagementSystemDataSetTableAdapte
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(MovieTicketManagementSystemDataSet.Movie_InformationDataTable dataTable) {
+        public virtual int Update(MovieTicketManagementSystemDataSet.MoviesDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
@@ -1801,7 +1760,7 @@ namespace MovieTicketBookingSystem.MovieTicketManagementSystemDataSetTableAdapte
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(MovieTicketManagementSystemDataSet dataSet) {
-            return this.Adapter.Update(dataSet, "Movie_Information");
+            return this.Adapter.Update(dataSet, "Movies");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1823,43 +1782,43 @@ namespace MovieTicketBookingSystem.MovieTicketManagementSystemDataSetTableAdapte
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(int Movie_ID, string Movie_Title, string Movie_Genre, string Movie_Synopsis, global::System.Nullable<int> Movie_RunTime, string Movie_ReleaseDate, byte[] Movie_Image) {
-            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(Movie_ID));
-            if ((Movie_Title == null)) {
-                throw new global::System.ArgumentNullException("Movie_Title");
+        public virtual int Insert(int MovieID, string MovieName, string Genres, string Synopsis, global::System.Nullable<int> RunTime, string ReleaseDate, byte[] Poster) {
+            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(MovieID));
+            if ((MovieName == null)) {
+                throw new global::System.ArgumentNullException("MovieName");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(Movie_Title));
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(MovieName));
             }
-            if ((Movie_Genre == null)) {
-                throw new global::System.ArgumentNullException("Movie_Genre");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(Movie_Genre));
-            }
-            if ((Movie_Synopsis == null)) {
-                throw new global::System.ArgumentNullException("Movie_Synopsis");
+            if ((Genres == null)) {
+                throw new global::System.ArgumentNullException("Genres");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(Movie_Synopsis));
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(Genres));
             }
-            if ((Movie_RunTime.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((int)(Movie_RunTime.Value));
+            if ((Synopsis == null)) {
+                throw new global::System.ArgumentNullException("Synopsis");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(Synopsis));
+            }
+            if ((RunTime.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((int)(RunTime.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
-            if ((Movie_ReleaseDate == null)) {
-                throw new global::System.ArgumentNullException("Movie_ReleaseDate");
+            if ((ReleaseDate == null)) {
+                throw new global::System.ArgumentNullException("ReleaseDate");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(Movie_ReleaseDate));
+                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(ReleaseDate));
             }
-            if ((Movie_Image == null)) {
+            if ((Poster == null)) {
                 this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[6].Value = ((byte[])(Movie_Image));
+                this.Adapter.InsertCommand.Parameters[6].Value = ((byte[])(Poster));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -1892,7 +1851,7 @@ namespace MovieTicketBookingSystem.MovieTicketManagementSystemDataSetTableAdapte
         
         private Customer_SignUpTableAdapter _customer_SignUpTableAdapter;
         
-        private Movie_InformationTableAdapter _movie_InformationTableAdapter;
+        private MoviesTableAdapter _moviesTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -1928,12 +1887,12 @@ namespace MovieTicketBookingSystem.MovieTicketManagementSystemDataSetTableAdapte
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public Movie_InformationTableAdapter Movie_InformationTableAdapter {
+        public MoviesTableAdapter MoviesTableAdapter {
             get {
-                return this._movie_InformationTableAdapter;
+                return this._moviesTableAdapter;
             }
             set {
-                this._movie_InformationTableAdapter = value;
+                this._moviesTableAdapter = value;
             }
         }
         
@@ -1960,9 +1919,9 @@ namespace MovieTicketBookingSystem.MovieTicketManagementSystemDataSetTableAdapte
                             && (this._customer_SignUpTableAdapter.Connection != null))) {
                     return this._customer_SignUpTableAdapter.Connection;
                 }
-                if (((this._movie_InformationTableAdapter != null) 
-                            && (this._movie_InformationTableAdapter.Connection != null))) {
-                    return this._movie_InformationTableAdapter.Connection;
+                if (((this._moviesTableAdapter != null) 
+                            && (this._moviesTableAdapter.Connection != null))) {
+                    return this._moviesTableAdapter.Connection;
                 }
                 return null;
             }
@@ -1980,7 +1939,7 @@ namespace MovieTicketBookingSystem.MovieTicketManagementSystemDataSetTableAdapte
                 if ((this._customer_SignUpTableAdapter != null)) {
                     count = (count + 1);
                 }
-                if ((this._movie_InformationTableAdapter != null)) {
+                if ((this._moviesTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -2003,12 +1962,12 @@ namespace MovieTicketBookingSystem.MovieTicketManagementSystemDataSetTableAdapte
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._movie_InformationTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.Movie_Information.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._moviesTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.Movies.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._movie_InformationTableAdapter.Update(updatedRows));
+                    result = (result + this._moviesTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -2030,11 +1989,11 @@ namespace MovieTicketBookingSystem.MovieTicketManagementSystemDataSetTableAdapte
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._movie_InformationTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.Movie_Information.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._moviesTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.Movies.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._movie_InformationTableAdapter.Update(addedRows));
+                    result = (result + this._moviesTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -2048,11 +2007,11 @@ namespace MovieTicketBookingSystem.MovieTicketManagementSystemDataSetTableAdapte
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private int UpdateDeletedRows(MovieTicketManagementSystemDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._movie_InformationTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.Movie_Information.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._moviesTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.Movies.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._movie_InformationTableAdapter.Update(deletedRows));
+                    result = (result + this._moviesTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -2108,8 +2067,8 @@ namespace MovieTicketBookingSystem.MovieTicketManagementSystemDataSetTableAdapte
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
-            if (((this._movie_InformationTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._movie_InformationTableAdapter.Connection) == false))) {
+            if (((this._moviesTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._moviesTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
@@ -2154,13 +2113,13 @@ namespace MovieTicketBookingSystem.MovieTicketManagementSystemDataSetTableAdapte
                         adaptersWithAcceptChangesDuringUpdate.Add(this._customer_SignUpTableAdapter.Adapter);
                     }
                 }
-                if ((this._movie_InformationTableAdapter != null)) {
-                    revertConnections.Add(this._movie_InformationTableAdapter, this._movie_InformationTableAdapter.Connection);
-                    this._movie_InformationTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._movie_InformationTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._movie_InformationTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._movie_InformationTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._movie_InformationTableAdapter.Adapter);
+                if ((this._moviesTableAdapter != null)) {
+                    revertConnections.Add(this._moviesTableAdapter, this._moviesTableAdapter.Connection);
+                    this._moviesTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._moviesTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._moviesTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._moviesTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._moviesTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -2225,9 +2184,9 @@ namespace MovieTicketBookingSystem.MovieTicketManagementSystemDataSetTableAdapte
                     this._customer_SignUpTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._customer_SignUpTableAdapter]));
                     this._customer_SignUpTableAdapter.Transaction = null;
                 }
-                if ((this._movie_InformationTableAdapter != null)) {
-                    this._movie_InformationTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._movie_InformationTableAdapter]));
-                    this._movie_InformationTableAdapter.Transaction = null;
+                if ((this._moviesTableAdapter != null)) {
+                    this._moviesTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._moviesTableAdapter]));
+                    this._moviesTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

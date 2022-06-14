@@ -32,7 +32,7 @@ namespace MovieTicketBookingSystem
                 String Username = tbUsername.Text.ToString();
                 String Password = tbPassword.Text.ToString();
 
-                String qry = "select UserName,Password from dbo.Customer_SignUp where UserName ='" + tbUsername.Text + "' and Password ='" + tbPassword.Text + "'";
+                String qry = "select Username,Password from dbo.Users where Username ='" + tbUsername.Text + "' and Password ='" + tbPassword.Text + "'";
 
                 SqlCommand cmd = new SqlCommand(qry, con);
                 SqlDataAdapter sd = new SqlDataAdapter(qry, con);

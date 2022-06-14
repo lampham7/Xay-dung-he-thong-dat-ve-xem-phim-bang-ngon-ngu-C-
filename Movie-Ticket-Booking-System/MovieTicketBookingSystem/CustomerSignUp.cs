@@ -33,7 +33,7 @@ namespace MovieTicketBookingSystem
                 {
                     gender = radioButton2.Text.ToString();
                 }
-                String qry = "insert into dbo.Customer_SignUp(ID,FullName,UserName,Password,MobileNo,Gender,EmailAddress,Nationality)  values('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "','" + textBox4.Text + "','" + textBox5.Text + "','" + gender + "','" + textBox6.Text + "','" + textBox7.Text + "')";
+                String qry = "insert into dbo.Users(Username,Password,FullName,Gender,PhoneNumber,Email)  values('" + textBox3.Text + "','" + textBox4.Text + "','" + textBox2.Text + "','" + gender + "','" + textBox5.Text + "','" + textBox6.Text + "')";
 
                 SqlCommand sc = new SqlCommand(qry, con);
                 sc.ExecuteNonQuery();
@@ -103,6 +103,21 @@ namespace MovieTicketBookingSystem
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CustomerSignUp_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }

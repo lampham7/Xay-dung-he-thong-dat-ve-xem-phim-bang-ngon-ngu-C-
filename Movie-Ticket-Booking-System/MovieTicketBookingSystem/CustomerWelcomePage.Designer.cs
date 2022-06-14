@@ -56,10 +56,10 @@
             this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Location = new System.Drawing.Point(265, 242);
+            this.panel2.Location = new System.Drawing.Point(330, 242);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(380, 120);
+            this.panel2.Size = new System.Drawing.Size(246, 120);
             this.panel2.TabIndex = 7;
             // 
             // label3
@@ -68,12 +68,12 @@
             this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 13F);
             this.label3.ForeColor = System.Drawing.Color.Blue;
-            this.label3.Location = new System.Drawing.Point(107, 73);
+            this.label3.Location = new System.Drawing.Point(87, 73);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(174, 25);
+            this.label3.Size = new System.Drawing.Size(75, 25);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Đã có? Đăng nhập";
+            this.label3.Text = "Đã có?";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
@@ -82,12 +82,12 @@
             this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 13F);
             this.label4.ForeColor = System.Drawing.Color.Blue;
-            this.label4.Location = new System.Drawing.Point(65, 21);
+            this.label4.Location = new System.Drawing.Point(29, 21);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(262, 25);
+            this.label4.Size = new System.Drawing.Size(182, 25);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Chưa có tài khoản? Đăng ký";
+            this.label4.Text = "Chưa có tài khoản?";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // panel1

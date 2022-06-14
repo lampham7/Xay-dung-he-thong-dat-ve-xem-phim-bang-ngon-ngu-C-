@@ -24,18 +24,14 @@ namespace MovieTicketBookingSystem
         {
             try
             {
+                String movieName = textBox2.Text.ToString();
+                String genres = textBox5.Text.ToString();
+                String synopsis = richTextBox1.Text.ToString();
 
-                String movieID = textBox1.Text.ToString();
-                int imovieID = int.Parse(movieID);
+                String runTime = textBox3.Text.ToString();
+                //int irunTime = Int32.Parse(runTime);
 
-                String movieTitle = textBox2.Text.ToString();
-                String movieGenre = textBox5.Text.ToString();
-                String movieSynopsis = richTextBox1.Text.ToString();
-
-                String movieTime = textBox3.Text.ToString();
-                int imovieTime = Int32.Parse(movieTime);
-
-                String movieReleaseDate = dateTimePicker1.Value.ToString();
+                String releaseDate = dateTimePicker1.Value.ToString();
 
                 byte[] img = null;
                 FileStream fstream = new FileStream(picLoc1, FileMode.Open, FileAccess.Read);
@@ -43,7 +39,7 @@ namespace MovieTicketBookingSystem
                 img = br.ReadBytes((int)fstream.Length);
 
                 con.Open();
-                String qry = "insert into dbo.Movie_Information(Movie_ID,Movie_Title,Movie_Genre,Movie_Synopsis,Movie_RunTime,Movie_ReleaseDate,Movie_Image) values('" + movieID + "',N'" + movieTitle + "',N'" + movieGenre + "',N'" + movieSynopsis + "','" + imovieTime + "','" + movieReleaseDate + "',@img) ";
+                String qry = "insert into dbo.Movies(MovieName,Genres,Synopsis,RunTime,ReleaseDate,Poster) values(N'" + movieName + "',N'" + genres + "',N'" + synopsis + "','" + runTime + "','" + releaseDate + "',@img) ";
 
                 SqlCommand sc = new SqlCommand(qry, con);
                 sc.Parameters.Add(new SqlParameter("@img", img));
